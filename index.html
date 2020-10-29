@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>    
-<div id="agentz-chatbot-ab17701d-abdc-464b-ad82-bed6d76b9dd3"></div>
-    <script>
+<!-- <div id="agentz-chatbot-ab17701d-abdc-464b-ad82-bed6d76b9dd3"></div> -->
+<!--     <script>
      document.onreadystatechange = function(){
           if (document.readyState === "complete") {
             var resource = document.createElement('script'); 
@@ -13,8 +13,17 @@
             script.parentNode.insertBefore(resource, script);
           }
       }
+    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/7.0.0/material-components-web.min.js" 
+            integrity="sha512-GYvkycU+qodQqIjA1hgH0730R1CDRpUkZguOGokHBdQIKtGgoRhcT+kpAm4SGLo4pptvvVuhrq1aZOIgXRANaA==" crossorigin="anonymous"></script>
+    <script src="./index.js" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+    let url = 'https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits';
+    let response = await fetch(url);
+    let commits = await response.json(); // read response body and parse as JSON
+    console.log(commits[0].author.login);
     </script>
-    <script async importance="low" src="./index.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mountain Travel</title>
