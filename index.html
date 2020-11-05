@@ -11,15 +11,6 @@
       }
     console.log("hello");
     </script>
-    <script>
-      document.onreadystatechange = function(){
-        console.log("second readystatechange fn called");
-        if (document.readyState === "complete") {
-          console.log("second document state complete");
-        }
-      }
-    console.log("second hello");
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" 
             integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/7.0.0/material-components-web.min.js" 
@@ -62,7 +53,15 @@ script.parentNode.insertBefore(resource, script);
 }
 </script>
 
-
+    <script>
+      document.onreadystatechange = function(){
+        console.log("second readystatechange fn called");
+        if (document.readyState === "complete") {
+          console.log("second document state complete");
+        }
+      }
+    console.log("second hello");
+    </script>
   
   </head>
   <body>
