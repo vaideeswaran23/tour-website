@@ -46,12 +46,16 @@
 
     <script>
      document.onreadystatechange = function(){
-        console.log("new fn");
+         if (document.readyState === "complete") {
+         `  console.log("new fn");
+         }
       }
     </script>
       <script>
-     document.addEventListener('readystatechange', function(){
-        console.log("new fn 2");
+     document.addEventListener('readystatechange', function(event){
+       if (event.target.readyState === "complete") {
+         console.log("new fn 2");
+       }
       }, false);
     </script>
   </head>
