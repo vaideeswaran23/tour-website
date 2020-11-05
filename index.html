@@ -2,15 +2,7 @@
 <html>
   <head>
 
-    <script>
-      document.onreadystatechange = function(){
-        console.log("readystatechange fn called");
-        if (document.readyState === "complete") {
-          console.log("document state complete");
-        }
-      }
-    console.log("hello");
-    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" 
             integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/7.0.0/material-components-web.min.js" 
@@ -42,26 +34,14 @@
 <link rel="preload" href="https://dev2-chatbot.agentz.ai/agentz-chatbot.js?version=1&botUrl=https://dev2-chatbot.agentz.ai&title=title&masterBusinessAgent=30df0f70-495e-44c7-8074-aa2913222d8d" as="script" />
 <div id="agentz-chatbot-30df0f70-495e-44c7-8074-aa2913222d8d"></div>
 <script>
-document.onreadystatechange = function(){
-if (document.readyState === "complete") {
+
 var resource = document.createElement('script');
-resource.defer = "true";
+resource.async = !0;
 resource.src = "https://dev2-chatbot.agentz.ai/agentz-chatbot.js?version=1&botUrl=https://dev2-chatbot.agentz.ai&title=title&masterBusinessAgent=30df0f70-495e-44c7-8074-aa2913222d8d";
 var script = document.getElementsByTagName('script')[0];
 script.parentNode.insertBefore(resource, script);
-}
-}
-</script>
 
-    <script>
-      document.onreadystatechange = function(){
-        console.log("second readystatechange fn called");
-        if (document.readyState === "complete") {
-          console.log("second document state complete");
-        }
-      }
-    console.log("second hello");
-    </script>
+</script>
   
   </head>
   <body>
