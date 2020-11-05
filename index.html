@@ -43,7 +43,17 @@
           }
       }, false);
     </script>
-  
+
+    <script>
+     document.onreadystatechange = function(){
+        console.log("new fn");
+      }
+    </script>
+      <script>
+     document.addEventListener('readystatechange', function(){
+        console.log("new fn 2");
+      }, false);
+    </script>
   </head>
   <body>
     <!-- Forked from a template on Tutorialzine: https://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox -->
