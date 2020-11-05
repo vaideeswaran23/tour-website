@@ -3,7 +3,22 @@
   <head>
 
     <script>
+      document.onreadystatechange = function(){
+        console.log("readystatechange fn called");
+        if (document.readyState === "complete") {
+          console.log("document state complete");
+        }
+      }
     console.log("hello");
+    </script>
+    <script>
+      document.onreadystatechange = function(){
+        console.log("second readystatechange fn called");
+        if (document.readyState === "complete") {
+          console.log("second document state complete");
+        }
+      }
+    console.log("second hello");
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" 
             integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
