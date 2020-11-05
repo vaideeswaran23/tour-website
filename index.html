@@ -37,6 +37,7 @@
 
 var resource = document.createElement('script');
 resource.defer = !0;
+resource.importance = "low";
 resource.src = "https://dev2-chatbot.agentz.ai/agentz-chatbot.js?version=1&botUrl=https://dev2-chatbot.agentz.ai&title=title&masterBusinessAgent=30df0f70-495e-44c7-8074-aa2913222d8d";
 var script = document.getElementsByTagName('script')[0];
 script.parentNode.insertBefore(resource, script);
