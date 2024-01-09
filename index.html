@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+<div id="agentz-chatbot-ae63648f-0263-486e-8614-72993a8dd557"></div>
+    <script>
+      function LoadChatWidget() {
+        var resource = document.createElement('script'); 
+        resource.defer = "true";
+        resource.src = "https://staging-chatbot.agentz.ai/agentz-chatbot.js?version=1&botUrl=https://staging-chatbot.agentz.ai&title=title&businessAgent=ae63648f-0263-486e-8614-72993a8dd557";
+        var script = document.getElementsByTagName('script')[0];
+        script.parentNode.insertBefore(resource, script);
+      }
+      document.addEventListener('readystatechange', function(event){
+        if (event.target.readyState === "complete") {
+          setTimeout(function() {
+            LoadChatWidget();
+          }, 5000)    
+        }
+      }, false);
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" 
             integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
@@ -31,18 +47,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
-<div id="agentz-chatbot-39a992d8-4650-43b4-9363-59e1ae7092f7"></div>
-    <script>
-    document.addEventListener('readystatechange', function(event){
-        if (event.target.readyState === "complete") {
-            var resource = document.createElement('script'); 
-            resource.defer = "true";
-            resource.src = "https://dev2-chatbot.agentz.ai/agentz-chatbot.js?version=1&botUrl=https://dev2-chatbot.agentz.ai&title=title&businessAgent=39a992d8-4650-43b4-9363-59e1ae7092f7";
-            var script = document.getElementsByTagName('script')[0];
-            script.parentNode.insertBefore(resource, script);
-        }
-    }, false);
-    </script>
+
   <body>
     <header>
       <h2><a href="#">Mountain Travel</a></h2>
